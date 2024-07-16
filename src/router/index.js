@@ -21,6 +21,13 @@ const routes = [
       return import("../views/SocialView.vue");
     },
   },
+  {
+    path: "/artwork",
+    name: "artwork",
+    component: function () {
+      return import("../views/ArtView.vue");
+    },
+  },
 ];
 
 const router = createRouter({

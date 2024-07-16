@@ -23,9 +23,15 @@
       </div>
     </div>
     <div class="d-flex justify-center">
-      <div class="hover w-25"><p>Type of artwork</p></div>
-      <div class="hover w-25"><p>Type of artwork</p></div>
-      <div class="hover w-25"><p>Type of artwork</p></div>
+      <router-link to="/artwork">
+        <div class="hover w-25"><p>Type of artwork</p></div>
+      </router-link>
+      <router-link to="/artwork">
+        <div class="hover w-25"><p>Type of artwork</p></div>
+      </router-link>
+      <router-link to="/artwork">
+        <div class="hover w-25"><p>Type of artwork</p></div>
+      </router-link>
     </div>
   </div>
 </template>
