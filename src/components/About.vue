@@ -18,15 +18,38 @@
     <div class="image">
       <p>Hello world</p>
     </div>
-    <div class="home">
-      <router-link to="/">
+    <router-link to="/">
+      <div class="home d-flex align-center">
         <p class="h-text">HOME</p>
-      </router-link>
-    </div>
+        <svg-icon
+          type="mdi"
+          :path="path"
+          class="triangle color-white"
+        ></svg-icon>
+      </div>
+    </router-link>
   </div>
 </template>
 
-<script></script>
+<script>
+import SvgIcon from "@jamescoyle/vue-icon";
+import { mdiTriangleDown } from "@mdi/js";
+// import { mdiTriangleDownOutline } from "@mdi/js";
+export default {
+  name: "my-cool-component",
+
+  components: {
+    SvgIcon,
+  },
+
+  data() {
+    return {
+      path: mdiTriangleDown,
+      // path: mdiTriangleDownOutline,
+    };
+  },
+};
+</script>
 
 <style scoped>
 .text,
@@ -34,7 +57,16 @@
   width: 45%;
 }
 
-.h-text {
+.h-text,
+.triangle {
   rotate: -90deg;
+}
+
+.home:hover {
+  margin-left: -0.5rem;
+}
+
+.triangle {
+  margin-left: -1rem;
 }
 </style>

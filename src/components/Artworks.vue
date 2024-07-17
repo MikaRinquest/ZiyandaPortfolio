@@ -1,10 +1,15 @@
 <template>
-  <div class="w-screen">
-    <div class="home">
-      <router-link to="/">
+  <div class="w-screen d-flex flex-column align-center">
+    <router-link to="/">
+      <div class="home">
+        <svg-icon
+          type="mdi"
+          :path="path"
+          class="triangle color-white"
+        ></svg-icon>
         <p class="h-text">HOME</p>
-      </router-link>
-    </div>
+      </div>
+    </router-link>
     <div class="artcards">
       <h2 class="text-center">Art Category</h2>
       <div class="card-holder d-flex flex-wrap">
@@ -26,9 +31,19 @@
 </template>
 
 <script>
+import SvgIcon from "@jamescoyle/vue-icon";
+import { mdiTriangleDown } from "@mdi/js";
+// import { mdiTriangleDownOutline } from "@mdi/js";
 export default {
+  name: "my-cool-component",
+
+  components: {
+    SvgIcon,
+  },
   data() {
     return {
+      path: mdiTriangleDown,
+      // path: mdiTriangleDownOutline,
       cards: [
         {
           src: "https://cdn.vuetifyjs.com/docs/images/cards/purple-flowers.jpg",
@@ -58,8 +73,13 @@ export default {
 </script>
 
 <style scoped>
-.home {
-  height: 5%;
+.home:hover {
+  padding-top: 0.5rem;
+}
+
+.triangle {
+  rotate: 180deg;
+  margin-bottom: -0.5rem;
 }
 
 .artcards {

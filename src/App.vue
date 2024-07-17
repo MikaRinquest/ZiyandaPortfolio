@@ -23,4 +23,15 @@ a {
   background-color: black;
   color: white;
 }
+
+.home {
+  height: 5rem;
+  aspect-ratio: 1;
+  transition: 0.5s ease;
+}
+
+.triangle {
+  height: 1rem;
+  aspect-ratio: 1;
+}
 </style>
