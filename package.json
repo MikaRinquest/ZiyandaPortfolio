@@ -9,6 +9,7 @@
   "dependencies": {
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/js": "^7.4.47",
+    "gsap": "^3.12.5",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuetify": "^3.6.12",
