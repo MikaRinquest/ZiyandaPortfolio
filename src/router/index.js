@@ -13,6 +13,7 @@ const routes = [
     component: function () {
       return import("../views/AboutView.vue");
     },
+    meta: { transition: "slide-left" },
   },
   {
     path: "/socials",
@@ -20,6 +21,7 @@ const routes = [
     component: function () {
       return import("../views/SocialView.vue");
     },
+    meta: { transition: "slide-right" },
   },
   {
     path: "/artwork",
@@ -27,6 +29,7 @@ const routes = [
     component: function () {
       return import("../views/ArtView.vue");
     },
+    meta: { transition: "slide-down" },
   },
 ];
 
