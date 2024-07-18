@@ -16,7 +16,11 @@
       </p>
     </div>
     <div class="image">
-      <p>Hello world</p>
+      <img
+        src="https://i.postimg.cc/tJKwc9yH/zee-slay.jpg"
+        alt="Image of Ziyanda Slaying"
+        class="slay"
+      />
     </div>
     <router-link to="/">
       <div class="home d-flex align-center">
@@ -55,6 +59,12 @@ export default {
 .text,
 .image {
   width: 45%;
+}
+
+.slay {
+  width: 55%;
+  aspect-ratio: 1;
+  border-radius: 15%;
 }
 
 .h-text,
