@@ -7,4 +7,8 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.h-holder {
+  width: 40%;
+}
+</style>

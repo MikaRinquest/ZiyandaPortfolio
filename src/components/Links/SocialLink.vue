@@ -1,5 +1,5 @@
 <template>
-  <div class="s-holder">
+  <div class="s-holder d-flex justify-center">
     <div class="socials">
       <router-link to="/socials">
         <div class="home d-flex align-center">
@@ -36,8 +36,20 @@ export default {
 </script>
 
 <style scoped>
+.s-holder {
+  width: 30%;
+}
+
 .s-text,
 .triangle {
   rotate: -90deg;
+}
+
+.triangle {
+  margin-left: -1rem;
+}
+
+.home:hover {
+  margin-left: -0.5rem;
 }
 </style>

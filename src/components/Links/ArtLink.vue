@@ -1,7 +1,7 @@
 <template>
-  <div class="d-flex justify-center">
+  <div class="d-flex justify-space-evenly">
     <router-link to="/artwork">
-      <div class="home w-25">
+      <div class="homelink">
         <p>Type of artwork</p>
         <svg-icon
           type="mdi"
@@ -11,7 +11,7 @@
       </div>
     </router-link>
     <router-link to="/artwork">
-      <div class="home w-25">
+      <div class="homelink">
         <p>Type of artwork</p>
         <svg-icon
           type="mdi"
@@ -21,7 +21,7 @@
       </div>
     </router-link>
     <router-link to="/artwork">
-      <div class="home w-25">
+      <div class="homelink">
         <p>Type of artwork</p>
         <svg-icon
           type="mdi"
@@ -53,4 +53,13 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.homelink {
+  aspect-ratio: 1;
+  transition: 0.5s ease;
+}
+
+.homelink:hover {
+  margin-top: -0.5rem;
+}
+</style>

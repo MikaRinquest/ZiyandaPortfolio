@@ -1,5 +1,5 @@
 <template>
-  <div class="a-holder">
+  <div class="a-holder d-flex justify-center">
     <div class="about">
       <router-link to="/about">
         <div class="home d-flex align-center">
@@ -36,8 +36,20 @@ export default {
 </script>
 
 <style scoped>
+.a-holder {
+  width: 30%;
+}
+
 .a-text,
 .triangle {
   rotate: 90deg;
+}
+
+.triangle {
+  margin-right: -1.4rem;
+}
+
+.home:hover {
+  margin-left: 0.5rem;
 }
 </style>
